@@ -31,12 +31,12 @@ void OpenGLWindow::initializeGL() {
       glm::lookAt(glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 0.0f, -1.0f),
                   glm::vec3(0.0f, 1.0f, 0.0f));
 
-  // Setup stars
-  for (const auto index : iter::range(m_numStars)) {
-    auto &position{m_starPositions.at(index)};
-    auto &rotation{m_starRotations.at(index)};
+  // Setup asteroids
+  for (const auto index : iter::range(m_numAsteroids)) {
+    auto &position{m_asteroidPositions.at(index)};
+    auto &rotation{m_asteroidRotations.at(index)};
 
-    randomizeStar(position, rotation);
+    randomizeAsteroid(position, rotation);
   }
   for (const auto index : iter::range(m_numPlanets)) {
     auto &position{m_planetPositions.at(index)};
@@ -47,7 +47,7 @@ void OpenGLWindow::initializeGL() {
 
 }
 
-void OpenGLWindow::randomizeStar(glm::vec3 &position, glm::vec3 &rotation) {
+void OpenGLWindow::randomizeAsteroid(glm::vec3 &position, glm::vec3 &rotation) {
   // Get random position
   // x and y coordinates in the range [-20, 20]
   // z coordinates in the range [-100, 0]
@@ -122,14 +122,14 @@ void OpenGLWindow::paintGL() {
   // Set uniform variables used by every scene object
   abcg::glUniformMatrix4fv(viewMatrixLoc, 1, GL_FALSE, &m_viewMatrix[0][0]);
   abcg::glUniformMatrix4fv(projMatrixLoc, 1, GL_FALSE, &m_projMatrix[0][0]);
-  abcg::glUniform4f(colorLoc, 0.8f, 0.4f, 0.2f, 1.0f);  // Brown
+  abcg::glUniform4f(colorLoc, 0.3f, 0.1f, 0.0f, 1.0f);  // Brown
 
-  // Render each star
-  for (const auto index : iter::range(m_numStars)) {
-    const auto &position{m_starPositions.at(index)};
-    const auto &rotation{m_starRotations.at(index)};
+  // Render each asteroid
+  for (const auto index : iter::range(m_numAsteroids)) {
+    const auto &position{m_asteroidPositions.at(index)};
+    const auto &rotation{m_asteroidRotations.at(index)};
 
-    // Compute model matrix of the current star
+    // Compute model matrix of the current asteroid
     glm::mat4 modelMatrix{1.0f};
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::scale(modelMatrix, glm::vec3(0.2f));
@@ -143,7 +143,7 @@ void OpenGLWindow::paintGL() {
   }
 
   //render da ship
-  // Compute model matrix of the current star
+  // Compute model matrix of the current asteroid
   glm::mat4 modelMatrix{1.0f};
   //modelMatrix = glm::translate(modelMatrix, m_shipPosition);
   modelMatrix = glm::scale(modelMatrix, glm::vec3(5.0f));
@@ -159,7 +159,7 @@ void OpenGLWindow::paintGL() {
     const auto &position{m_planetPositions.at(index)};
     const auto &rotation{m_planetRotations.at(index)};
 
-    // Compute model matrix of the current star
+    // Compute model matrix of the current asteroid
     glm::mat4 modelMatrix{1.0f};
     modelMatrix = glm::translate(modelMatrix, position);
     modelMatrix = glm::scale(modelMatrix, glm::vec3(2.0f));
@@ -250,18 +250,18 @@ void OpenGLWindow::update() {
   // Animate angle by 90 degrees per second
   const float deltaTime{static_cast<float>(getDeltaTime())};
   m_angle = glm::wrapAngle(m_angle + glm::radians(90.0f) * deltaTime);
-  // Update stars
-  for (const auto index : iter::range(m_numStars)) {
-    auto &position{m_starPositions.at(index)};
-    auto &rotation{m_starRotations.at(index)};
+  // Update asteroids
+  for (const auto index : iter::range(m_numAsteroids)) {
+    auto &position{m_asteroidPositions.at(index)};
+    auto &rotation{m_asteroidRotations.at(index)};
 
     // Z coordinate increases by 10 units per second
     position.z += deltaTime * 10.0f;
 
-    // If this star is behind the camera, select a new random position and
+    // If this asteroid is behind the camera, select a new random position and
     // orientation, and move it back to -100
     if (position.z > 0.1f) {
-      randomizeStar(position, rotation);
+      randomizeAsteroid(position, rotation);
       position.z = -100.0f;  // Back to -100
     }
   }
@@ -274,7 +274,7 @@ void OpenGLWindow::update() {
     // Z coordinate increases by 10 units per second
     position.z += deltaTime * 10.0f;
 
-    // If this star is behind the camera, select a new random position and
+    // If this asteroid is behind the camera, select a new random position and
     // orientation, and move it back to -100
     if (position.z > 0.1f) {
       randomizePlanet(position, rotation);
