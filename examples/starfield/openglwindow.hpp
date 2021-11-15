@@ -16,7 +16,7 @@ class OpenGLWindow : public abcg::OpenGLWindow {
 
  private:
   static const int m_numStars{500};
-  static const int m_numPlanets{30};
+  static const int m_numPlanets{12};
 
   GLuint m_program{};
 
@@ -27,12 +27,17 @@ class OpenGLWindow : public abcg::OpenGLWindow {
 
   Model m_asteroid;
   Model m_ship;
-  Model m_planet;
+  Model m_planetRing;
+  Model m_planetRound;
 
   std::array<glm::vec3, m_numStars> m_starPositions;
   std::array<glm::vec3, m_numStars> m_starRotations;
   std::array<glm::vec3, m_numPlanets> m_planetPositions;
   std::array<glm::vec3, m_numPlanets> m_planetRotations;
+
+  glm::vec3 m_shipPosition{0.0f, -5.0f, -100.0f};
+  glm::vec3 m_shipRotation = glm::normalize(glm::vec3(0.0f, 0.0f, 0.0f));
+
   float m_angle{};
 
   glm::mat4 m_viewMatrix{1.0f};
@@ -41,6 +46,7 @@ class OpenGLWindow : public abcg::OpenGLWindow {
 
   void randomizeStar(glm::vec3 &position, glm::vec3 &rotation);
   void randomizePlanet(glm::vec3 &position, glm::vec3 &rotation);
+  
   void update();
 };
 

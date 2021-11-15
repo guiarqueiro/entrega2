@@ -17,12 +17,14 @@ void OpenGLWindow::initializeGL() {
 
   // Load model
   m_asteroid.loadObj(getAssetsPath() + "asteroid.obj");
-  //m_ship.loadObj(getAssetsPath() + "ship.obj");
-  m_planet.loadObj(getAssetsPath() + "planet.obj");
+  m_ship.loadObj(getAssetsPath() + "ship.obj");
+  m_planetRing.loadObj(getAssetsPath() + "planetRing.obj");
+  m_planetRound.loadObj(getAssetsPath() + "planetRound.obj");
 
   m_asteroid.setupVAO(m_program);
-  //m_ship.setupVAO(m_program);
-  m_planet.setupVAO(m_program);
+  m_ship.setupVAO(m_program);
+  m_planetRing.setupVAO(m_program);
+  m_planetRound.setupVAO(m_program);
 
   // Camera at (0,0,0) and looking towards the negative z
   m_viewMatrix =
@@ -42,6 +44,7 @@ void OpenGLWindow::initializeGL() {
 
     randomizePlanet(position, rotation);
   }
+
 }
 
 void OpenGLWindow::randomizeStar(glm::vec3 &position, glm::vec3 &rotation) {
@@ -76,14 +79,11 @@ void OpenGLWindow::randomizePlanet(glm::vec3 &position, glm::vec3 &rotation) {
     else if(abs(X) > abs(Y)) position = glm::vec3(X-10.0f, Y, distPosZ(m_randomEngine));
     else if(abs(X) < abs(Y)) position = glm::vec3(X, Y-0.0f, distPosZ(m_randomEngine));
   }
-  
-  
   if(Y <= 0 && X > 0){
     if(X>=5 && abs(Y)>=5) position = glm::vec3(X+10.0f, Y-10.0f, distPosZ(m_randomEngine));
     else if(X>abs(Y)) position = glm::vec3(X+10.0f, Y, distPosZ(m_randomEngine));
     else if(X<abs(Y)) position = glm::vec3(X, Y-10.0f, distPosZ(m_randomEngine));
   }
-
   if(Y > 0 && X < 0){
     if(abs(X)>=5 && Y>=5) position = glm::vec3(X-10.0f, Y+10.0f, distPosZ(m_randomEngine));
     else if(abs(X) > Y) position = glm::vec3(X-10.0f, Y, distPosZ(m_randomEngine));
@@ -94,13 +94,10 @@ void OpenGLWindow::randomizePlanet(glm::vec3 &position, glm::vec3 &rotation) {
     else if(X>Y) position = glm::vec3(X+10.0f, Y, distPosZ(m_randomEngine));
     else if(X<Y) position = glm::vec3(X, Y+10.0f, distPosZ(m_randomEngine));
   }
-  
   //  Get random rotation axis
   std::uniform_real_distribution<float> distRotAxis(-0.0005f, 0.0005f);
 
-  rotation = glm::normalize(glm::vec3(distRotAxis(m_randomEngine), distRotAxis(m_randomEngine), 0.0f
-                                      /*distRotAxis(m_randomEngine),
-                                      distRotAxis(m_randomEngine)*/));
+  rotation = glm::normalize(glm::vec3(distRotAxis(m_randomEngine), distRotAxis(m_randomEngine), 0.0f));
 }
 
 void OpenGLWindow::paintGL() {
@@ -142,10 +139,21 @@ void OpenGLWindow::paintGL() {
     abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &modelMatrix[0][0]);
 
     m_asteroid.render();
+    
   }
+
+  //render da ship
+  // Compute model matrix of the current star
+  glm::mat4 modelMatrix{1.0f};
+  //modelMatrix = glm::translate(modelMatrix, m_shipPosition);
+  modelMatrix = glm::scale(modelMatrix, glm::vec3(5.0f));
+  modelMatrix = glm::rotate(modelMatrix, m_angle, m_shipRotation);
+  abcg::glUniform4f(colorLoc, 1.0f, 0.0f, 0.0f, 1.0f);  // Brown
+  m_ship.render();
+
   
   
-  abcg::glUniform4f(colorLoc, 1.0f, 1.0f, 1.0f, 1.0f);  // Brown
+
   // Render each planet
   for (const auto index : iter::range(m_numPlanets)) {
     const auto &position{m_planetPositions.at(index)};
@@ -154,13 +162,28 @@ void OpenGLWindow::paintGL() {
     // Compute model matrix of the current star
     glm::mat4 modelMatrix{1.0f};
     modelMatrix = glm::translate(modelMatrix, position);
-    modelMatrix = glm::scale(modelMatrix, glm::vec3(1.0f));
+    modelMatrix = glm::scale(modelMatrix, glm::vec3(2.0f));
     modelMatrix = glm::rotate(modelMatrix, m_angle, rotation);
 
     // Set uniform variable
     abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &modelMatrix[0][0]);
-
-    m_planet.render();
+    
+    if(index < 3){
+      abcg::glUniform4f(colorLoc, 0.93f, 0.82f, 0.0f, 1.0f);
+      m_planetRing.render();
+    }
+    if(index >= 3 && index < 6){
+      abcg::glUniform4f(colorLoc, 0.0f, 0.5f, 0.9f, 1.0f);
+      m_planetRound.render();
+    }
+    if(index >= 6 && index < 9){
+      abcg::glUniform4f(colorLoc, 0.0f, 0.5f, 0.5f, 1.0f);
+      m_planetRound.render();
+    }
+    if(index >= 9 && index < 12){
+      abcg::glUniform4f(colorLoc, 0.8f, 0.0f, 0.6f, 1.0f);
+      m_planetRing.render();
+    }
   }
 
   abcg::glUseProgram(0);
@@ -217,7 +240,9 @@ void OpenGLWindow::resizeGL(int width, int height) {
 
 void OpenGLWindow::terminateGL() {
   m_asteroid.terminateGL();
-  m_planet.terminateGL();
+  m_planetRing.terminateGL();
+  m_planetRound.terminateGL();
+  m_ship.terminateGL();
   abcg::glDeleteProgram(m_program);
 }
 
@@ -256,4 +281,5 @@ void OpenGLWindow::update() {
       position.z = -100.0f;  // Back to -100
     }
   }
+
 }
