@@ -105,56 +105,56 @@ build cmake_object_order_depends_target_abcg: phony || cmake_object_order_depend
 build abcg/CMakeFiles/abcg.dir/abcg_application.cpp.o: CXX_COMPILER__abcg_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/abcg_application.cpp || cmake_object_order_depends_target_abcg
   DEP_FILE = abcg\CMakeFiles\abcg.dir\abcg_application.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS="[""jpg"",""png""]" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = abcg\CMakeFiles\abcg.dir
   OBJECT_FILE_DIR = abcg\CMakeFiles\abcg.dir
 
 build abcg/CMakeFiles/abcg.dir/abcg_elapsedtimer.cpp.o: CXX_COMPILER__abcg_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/abcg_elapsedtimer.cpp || cmake_object_order_depends_target_abcg
   DEP_FILE = abcg\CMakeFiles\abcg.dir\abcg_elapsedtimer.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS="[""jpg"",""png""]" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = abcg\CMakeFiles\abcg.dir
   OBJECT_FILE_DIR = abcg\CMakeFiles\abcg.dir
 
 build abcg/CMakeFiles/abcg.dir/abcg_exception.cpp.o: CXX_COMPILER__abcg_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/abcg_exception.cpp || cmake_object_order_depends_target_abcg
   DEP_FILE = abcg\CMakeFiles\abcg.dir\abcg_exception.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS="[""jpg"",""png""]" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = abcg\CMakeFiles\abcg.dir
   OBJECT_FILE_DIR = abcg\CMakeFiles\abcg.dir
 
 build abcg/CMakeFiles/abcg.dir/abcg_image.cpp.o: CXX_COMPILER__abcg_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/abcg_image.cpp || cmake_object_order_depends_target_abcg
   DEP_FILE = abcg\CMakeFiles\abcg.dir\abcg_image.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS="[""jpg"",""png""]" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = abcg\CMakeFiles\abcg.dir
   OBJECT_FILE_DIR = abcg\CMakeFiles\abcg.dir
 
 build abcg/CMakeFiles/abcg.dir/abcg_openglfunctions.cpp.o: CXX_COMPILER__abcg_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/abcg_openglfunctions.cpp || cmake_object_order_depends_target_abcg
   DEP_FILE = abcg\CMakeFiles\abcg.dir\abcg_openglfunctions.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS="[""jpg"",""png""]" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = abcg\CMakeFiles\abcg.dir
   OBJECT_FILE_DIR = abcg\CMakeFiles\abcg.dir
 
 build abcg/CMakeFiles/abcg.dir/abcg_openglwindow.cpp.o: CXX_COMPILER__abcg_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/abcg_openglwindow.cpp || cmake_object_order_depends_target_abcg
   DEP_FILE = abcg\CMakeFiles\abcg.dir\abcg_openglwindow.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS="[""jpg"",""png""]" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = abcg\CMakeFiles\abcg.dir
   OBJECT_FILE_DIR = abcg\CMakeFiles\abcg.dir
 
 build abcg/CMakeFiles/abcg.dir/abcg_string.cpp.o: CXX_COMPILER__abcg_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/abcg_string.cpp || cmake_object_order_depends_target_abcg
   DEP_FILE = abcg\CMakeFiles\abcg.dir\abcg_string.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS="[""jpg"",""png""]" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = abcg\CMakeFiles\abcg.dir
   OBJECT_FILE_DIR = abcg\CMakeFiles\abcg.dir
 
 build abcg/CMakeFiles/abcg.dir/abcg_trackball.cpp.o: CXX_COMPILER__abcg_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/abcg_trackball.cpp || cmake_object_order_depends_target_abcg
   DEP_FILE = abcg\CMakeFiles\abcg.dir\abcg_trackball.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -sSDL2_IMAGE_FORMATS="[""jpg"",""png""]" -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = abcg\CMakeFiles\abcg.dir
   OBJECT_FILE_DIR = abcg\CMakeFiles\abcg.dir
 
@@ -244,49 +244,49 @@ build cmake_object_order_depends_target_imgui: phony || abcg/external/imgui/CMak
 build abcg/external/imgui/CMakeFiles/imgui.dir/imgui.cpp.o: CXX_COMPILER__imgui_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui/imgui.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = abcg\external\imgui\CMakeFiles\imgui.dir\imgui.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -s USE_SDL=2
-  INCLUDES = -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
   OBJECT_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
 
 build abcg/external/imgui/CMakeFiles/imgui.dir/imgui_demo.cpp.o: CXX_COMPILER__imgui_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui/imgui_demo.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = abcg\external\imgui\CMakeFiles\imgui.dir\imgui_demo.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -s USE_SDL=2
-  INCLUDES = -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
   OBJECT_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
 
 build abcg/external/imgui/CMakeFiles/imgui.dir/imgui_draw.cpp.o: CXX_COMPILER__imgui_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui/imgui_draw.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = abcg\external\imgui\CMakeFiles\imgui.dir\imgui_draw.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -s USE_SDL=2
-  INCLUDES = -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
   OBJECT_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
 
 build abcg/external/imgui/CMakeFiles/imgui.dir/imgui_tables.cpp.o: CXX_COMPILER__imgui_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui/imgui_tables.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = abcg\external\imgui\CMakeFiles\imgui.dir\imgui_tables.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -s USE_SDL=2
-  INCLUDES = -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
   OBJECT_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
 
 build abcg/external/imgui/CMakeFiles/imgui.dir/imgui_widgets.cpp.o: CXX_COMPILER__imgui_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui/imgui_widgets.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = abcg\external\imgui\CMakeFiles\imgui.dir\imgui_widgets.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -s USE_SDL=2
-  INCLUDES = -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
   OBJECT_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
 
 build abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_sdl.cpp.o: CXX_COMPILER__imgui_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui/imgui_impl_sdl.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = abcg\external\imgui\CMakeFiles\imgui.dir\imgui_impl_sdl.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -s USE_SDL=2
-  INCLUDES = -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
   OBJECT_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
 
 build abcg/external/imgui/CMakeFiles/imgui.dir/imgui_impl_opengl3.cpp.o: CXX_COMPILER__imgui_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui/imgui_impl_opengl3.cpp || cmake_object_order_depends_target_imgui
   DEP_FILE = abcg\external\imgui\CMakeFiles\imgui.dir\imgui_impl_opengl3.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -s USE_SDL=2
-  INCLUDES = -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -I/usr/local/include -I/opt/local/include -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
   OBJECT_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
   OBJECT_FILE_DIR = abcg\external\imgui\CMakeFiles\imgui.dir
 
@@ -524,21 +524,21 @@ build cmake_object_order_depends_target_starfield: phony || cmake_object_order_d
 build examples/starfield/CMakeFiles/starfield.dir/main.cpp.o: CXX_COMPILER__starfield_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/examples/starfield/main.cpp || cmake_object_order_depends_target_starfield
   DEP_FILE = examples\starfield\CMakeFiles\starfield.dir\main.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = examples\starfield\CMakeFiles\starfield.dir
   OBJECT_FILE_DIR = examples\starfield\CMakeFiles\starfield.dir
 
 build examples/starfield/CMakeFiles/starfield.dir/model.cpp.o: CXX_COMPILER__starfield_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/examples/starfield/model.cpp || cmake_object_order_depends_target_starfield
   DEP_FILE = examples\starfield\CMakeFiles\starfield.dir\model.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = examples\starfield\CMakeFiles\starfield.dir
   OBJECT_FILE_DIR = examples\starfield\CMakeFiles\starfield.dir
 
 build examples/starfield/CMakeFiles/starfield.dir/openglwindow.cpp.o: CXX_COMPILER__starfield_Release C$:/Users/Guilherme/Documents/CG_UFABC/entrega2/examples/starfield/openglwindow.cpp || cmake_object_order_depends_target_starfield
   DEP_FILE = examples\starfield\CMakeFiles\starfield.dir\openglwindow.cpp.o.d
   FLAGS = -O3 -DNDEBUG -flto=thin -Wall -Wextra -pedantic -std=c++20 -Oz -sUSE_SDL=2 -sUSE_SDL_IMAGE=2 -std=gnu++20
-  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
+  INCLUDES = -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/cppitertools -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/fmt -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/glm/.. -IC:/Users/Guilherme/Documents/CG_UFABC/emsdk/upstream/emscripten/cache/sysroot/include/SDL2 -IC:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui -isystem C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external
   OBJECT_DIR = examples\starfield\CMakeFiles\starfield.dir
   OBJECT_FILE_DIR = examples\starfield\CMakeFiles\starfield.dir
 
