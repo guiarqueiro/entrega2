@@ -35,8 +35,8 @@ class OpenGLWindow : public abcg::OpenGLWindow {
   std::array<glm::vec3, m_numPlanets> m_planetPositions;
   std::array<glm::vec3, m_numPlanets> m_planetRotations;
 
-  glm::vec3 m_shipPosition = glm::vec3(0.0f, 0.0f, -10.0f);
-  glm::vec3 m_shipRotation = glm::normalize(glm::vec3(0.0f, 0.0f, 0.0f));
+  glm::vec3 m_shipPosition = glm::vec3(0.0f, -5.0f, -5.0f);
+  glm::vec3 m_shipRotation = glm::normalize(glm::vec3(1.0f, 1.0f, 1.0f));
 
   float m_angle{};
 

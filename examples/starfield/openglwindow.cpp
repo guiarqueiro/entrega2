@@ -94,8 +94,9 @@ void OpenGLWindow::paintGL() {
   //render da ship
   glm::mat4 modelShipMatrix{1.0f};
   modelShipMatrix = glm::translate(modelShipMatrix, m_shipPosition);
-  modelShipMatrix = glm::scale(modelShipMatrix, glm::vec3(5.0f));
-  modelShipMatrix = glm::rotate(modelShipMatrix, m_angle, m_shipRotation);
+  modelShipMatrix = glm::scale(modelShipMatrix, glm::vec3(2.0f));
+  modelShipMatrix = glm::rotate(modelShipMatrix, 0.0f, m_shipRotation);
+  abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &modelShipMatrix[0][0]);
   abcg::glUniform4f(colorLoc, 1.0f, 0.0f, 0.0f, 1.0f);
   m_ship.render();
 
