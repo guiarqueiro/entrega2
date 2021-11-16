@@ -79,7 +79,8 @@ void OpenGLWindow::paintGL() {
   const GLint colorLoc{abcg::glGetUniformLocation(m_program, "color")};
   abcg::glUniformMatrix4fv(viewMatrixLoc, 1, GL_FALSE, &m_viewMatrix[0][0]);
   abcg::glUniformMatrix4fv(projMatrixLoc, 1, GL_FALSE, &m_projMatrix[0][0]);
-  abcg::glUniform4f(colorLoc, 0.3f, 0.1f, 0.0f, 1.0f);
+  abcg::glUniform4f(colorLoc, 0.6f, 0.2f, 0.0f, 1.0f);
+
   for (const auto index : iter::range(m_numAsteroids)) {
     const auto &position{m_asteroidPositions.at(index)};
     const auto &rotation{m_asteroidRotations.at(index)};
@@ -132,24 +133,13 @@ void OpenGLWindow::paintGL() {
 void OpenGLWindow::paintUI() {
   abcg::OpenGLWindow::paintUI();
   {
-    const auto widgetSize{ImVec2(218, 62)};
+    const auto widgetSize{ImVec2(218, 32)};
     ImGui::SetNextWindowPos(ImVec2(m_viewportWidth - widgetSize.x - 5, 5));
     ImGui::SetNextWindowSize(widgetSize);
     ImGui::Begin("Widget window", nullptr, ImGuiWindowFlags_NoDecoration);
     {
       ImGui::PushItemWidth(120);
       static std::size_t currentIndex{};
-      const std::vector<std::string> comboItems{"Perspective", "Orthographic"};
-      if (ImGui::BeginCombo("Projection",
-                            comboItems.at(currentIndex).c_str())) {
-        for (const auto index : iter::range(comboItems.size())) {
-          const bool isSelected{currentIndex == index};
-          if (ImGui::Selectable(comboItems.at(index).c_str(), isSelected))
-            currentIndex = index;
-          if (isSelected) ImGui::SetItemDefaultFocus();
-        }
-        ImGui::EndCombo();
-      }
       ImGui::PopItemWidth();
       ImGui::PushItemWidth(170);
       const auto aspect{static_cast<float>(m_viewportWidth) /
@@ -182,12 +172,15 @@ void OpenGLWindow::terminateGL() {
 }
 
 void OpenGLWindow::update() {
+  float rnd = sin(getElapsedTime())*10.0f;
+  float rndAst = sin(getElapsedTime())*3.0f;
   const float deltaTime{static_cast<float>(getDeltaTime())};
   m_angle = glm::wrapAngle(m_angle + glm::radians(90.0f) * deltaTime);
   for (const auto index : iter::range(m_numAsteroids)) {
     auto &position{m_asteroidPositions.at(index)};
     auto &rotation{m_asteroidRotations.at(index)};
     position.z += deltaTime * 10.0f;
+    position.y += deltaTime* rndAst;
     if (position.z > 0.1f) {
       randomizeAsteroid(position, rotation);
       position.z = -100.0f;
@@ -202,21 +195,6 @@ void OpenGLWindow::update() {
       position.z = -100.0f;
     }
   }
-  std::uniform_real_distribution<float> varPos(-100.0f, 100.0f);
-  if(varPos(m_randomEngine) >= 0.0f){
-    m_shipPosition.x += deltaTime*5.0f;
-    /*if(varPos(m_randomEngine) >= 95.0f){
-      m_shipPosition.y += deltaTime*30.0f;
-    }*/
-  }
-  if(varPos(m_randomEngine) < 0.0f){
-    m_shipPosition.x += deltaTime*(-5.0f);
-    /*if(varPos(m_randomEngine) <= -95.0f){
-      m_shipPosition.y += deltaTime*(-30.0f);
-    }*/
-  } 
-  if(m_shipPosition.x > 20.0f || m_shipPosition.x < -20.0f || m_shipPosition.y > 20.0f || m_shipPosition.y < -20.0f){
-    m_shipPosition.x = 0.0f;
-    m_shipPosition.y = -10.0f; 
-  }
+  
+  m_shipPosition.x = rnd;
 }
