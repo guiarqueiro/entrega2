@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Guilherme/Documents/CG_UFABC/entrega2/examples/starfield
+# Install script for directory: C:/Users/Guilherme/Documents/CG_UFABC/entrega2/examples/asteroidscreensaver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

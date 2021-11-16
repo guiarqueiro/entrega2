@@ -69,7 +69,7 @@
 					"source" : "abcg/external/imgui",
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -95,7 +95,7 @@
 					"source" : "abcg/external/fmt",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -136,18 +136,18 @@
 					"source" : "examples"
 				},
 				{
-					"build" : "examples/starfield",
-					"jsonFile" : "directory-examples.starfield-Debug-cd716aa2220066370d3d.json",
+					"build" : "examples/asteroidscreensaver",
+					"jsonFile" : "directory-examples.asteroidscreensaver-Debug-92b1d4ee6bfb9702dc96.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.11"
 					},
 					"parentIndex" : 8,
 					"projectIndex" : 6,
-					"source" : "examples/starfield",
+					"source" : "examples/asteroidscreensaver",
 					"targetIndexes" : 
 					[
-						3
+						1
 					]
 				}
 			],
@@ -197,7 +197,7 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						2
+						3
 					]
 				},
 				{
@@ -217,7 +217,7 @@
 					"parentIndex" : 1,
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				},
 				{
@@ -233,11 +233,11 @@
 					[
 						9
 					],
-					"name" : "starfield",
+					"name" : "asteroidscreensaver",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						3
+						1
 					]
 				}
 			],
@@ -246,9 +246,16 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "abcg::@fa5a221ce82f0a06330e",
-					"jsonFile" : "target-abcg-Debug-3cbd2a777d3ba806d66b.json",
+					"jsonFile" : "target-abcg-Debug-6a5b4e6f7abec7da2621.json",
 					"name" : "abcg",
 					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "asteroidscreensaver::@867960c34e191fe9c8de",
+					"jsonFile" : "target-asteroidscreensaver-Debug-a74c8af64dd0cdc5ac2f.json",
+					"name" : "asteroidscreensaver",
+					"projectIndex" : 6
 				},
 				{
 					"directoryIndex" : 5,
@@ -263,13 +270,6 @@
 					"jsonFile" : "target-imgui-Debug-a09bd229eb0de6558023.json",
 					"name" : "imgui",
 					"projectIndex" : 2
-				},
-				{
-					"directoryIndex" : 9,
-					"id" : "starfield::@08361c0d85d50584aabf",
-					"jsonFile" : "target-starfield-Debug-8d37535fe61a2a980ca1.json",
-					"name" : "starfield",
-					"projectIndex" : 6
 				}
 			]
 		}

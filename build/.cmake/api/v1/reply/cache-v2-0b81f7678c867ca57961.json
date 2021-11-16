@@ -1630,6 +1630,42 @@
 			"value" : "C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg"
 		},
 		{
+			"name" : "asteroidscreensaver_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/asteroidscreensaver"
+		},
+		{
+			"name" : "asteroidscreensaver_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "asteroidscreensaver_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Guilherme/Documents/CG_UFABC/entrega2/examples/asteroidscreensaver"
+		},
+		{
 			"name" : "cppitertools_BINARY_DIR",
 			"properties" : 
 			[
@@ -1808,42 +1844,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui"
-		},
-		{
-			"name" : "starfield_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/starfield"
-		},
-		{
-			"name" : "starfield_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "OFF"
-		},
-		{
-			"name" : "starfield_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Guilherme/Documents/CG_UFABC/entrega2/examples/starfield"
 		}
 	],
 	"kind" : "cache",

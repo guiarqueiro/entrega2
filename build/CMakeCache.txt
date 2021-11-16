@@ -305,6 +305,15 @@ abcg_LIB_DEPENDS:STATIC=general;mingw32;general;-mwindows;general;C:/msys64/ming
 abcg_SOURCE_DIR:STATIC=C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg
 
 //Value Computed by CMake
+asteroidscreensaver_BINARY_DIR:STATIC=C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/asteroidscreensaver
+
+//Value Computed by CMake
+asteroidscreensaver_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+asteroidscreensaver_SOURCE_DIR:STATIC=C:/Users/Guilherme/Documents/CG_UFABC/entrega2/examples/asteroidscreensaver
+
+//Value Computed by CMake
 cppitertools_BINARY_DIR:STATIC=C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/abcg/external/cppitertools
 
 //Value Computed by CMake
@@ -348,15 +357,6 @@ imgui_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 imgui_SOURCE_DIR:STATIC=C:/Users/Guilherme/Documents/CG_UFABC/entrega2/abcg/external/imgui
-
-//Value Computed by CMake
-starfield_BINARY_DIR:STATIC=C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/starfield
-
-//Value Computed by CMake
-starfield_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-starfield_SOURCE_DIR:STATIC=C:/Users/Guilherme/Documents/CG_UFABC/entrega2/examples/starfield
 
 
 ########################

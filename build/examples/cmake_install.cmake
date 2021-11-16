@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/starfield/cmake_install.cmake")
+  include("C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/asteroidscreensaver/cmake_install.cmake")
 
 endif()
 

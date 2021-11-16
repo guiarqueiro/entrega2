@@ -94,7 +94,7 @@ void OpenGLWindow::paintGL() {
   //render da ship
   glm::mat4 modelShipMatrix{1.0f};
   modelShipMatrix = glm::translate(modelShipMatrix, m_shipPosition);
-  modelShipMatrix = glm::scale(modelShipMatrix, glm::vec3(2.0f));
+  modelShipMatrix = glm::scale(modelShipMatrix, glm::vec3(1.50f));
   modelShipMatrix = glm::rotate(modelShipMatrix, 0.0f, m_shipRotation);
   abcg::glUniformMatrix4fv(modelMatrixLoc, 1, GL_FALSE, &modelShipMatrix[0][0]);
   abcg::glUniform4f(colorLoc, 1.0f, 0.0f, 0.0f, 1.0f);
@@ -201,5 +201,22 @@ void OpenGLWindow::update() {
       randomizePlanet(position, rotation);
       position.z = -100.0f;
     }
+  }
+  std::uniform_real_distribution<float> varPos(-100.0f, 100.0f);
+  if(varPos(m_randomEngine) >= 0.0f){
+    m_shipPosition.x += deltaTime*5.0f;
+    /*if(varPos(m_randomEngine) >= 95.0f){
+      m_shipPosition.y += deltaTime*30.0f;
+    }*/
+  }
+  if(varPos(m_randomEngine) < 0.0f){
+    m_shipPosition.x += deltaTime*(-5.0f);
+    /*if(varPos(m_randomEngine) <= -95.0f){
+      m_shipPosition.y += deltaTime*(-30.0f);
+    }*/
+  } 
+  if(m_shipPosition.x > 20.0f || m_shipPosition.x < -20.0f || m_shipPosition.y > 20.0f || m_shipPosition.y < -20.0f){
+    m_shipPosition.x = 0.0f;
+    m_shipPosition.y = -10.0f; 
   }
 }

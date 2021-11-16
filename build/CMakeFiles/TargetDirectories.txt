@@ -19,6 +19,6 @@ C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/abcg/external/gsl/CMakeFile
 C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/abcg/external/gsl/CMakeFiles/edit_cache.dir
 C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/CMakeFiles/rebuild_cache.dir
 C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/CMakeFiles/edit_cache.dir
-C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/starfield/CMakeFiles/rebuild_cache.dir
-C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/starfield/CMakeFiles/edit_cache.dir
-C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/starfield/CMakeFiles/starfield.dir
+C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/asteroidscreensaver/CMakeFiles/rebuild_cache.dir
+C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/asteroidscreensaver/CMakeFiles/edit_cache.dir
+C:/Users/Guilherme/Documents/CG_UFABC/entrega2/build/examples/asteroidscreensaver/CMakeFiles/asteroidscreensaver.dir
